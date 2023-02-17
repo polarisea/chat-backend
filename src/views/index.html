@@ -8,15 +8,24 @@
   </head>
   <body>
     <div>
-
-      <form action="https://localhost:2030/api/auth/register" method="post">
+      <form action="https://localhost:2030/api/users/register" method="post">
+        <input name="name"" placeholder="Name" />
         <input name="email" placeholder="Email" />
-        <input name="password" placeholder="Password"/>
+        <input name="password" placeholder="Password" />
         <button>Register</button>
       </form>
-      <form action="https://localhost:2030/api/auth/login" method="post">
+      <form action="https://localhost:2030/api/users/auth" method="post">
         <input name="email" placeholder="Email" />
-        <input name="password" placeholder="Password"/>
+        <input name="password" placeholder="Password" />
+        <button>Login</button>
+      </form>
+      <form
+        action="https://localhost:2030/api/users/password/update"
+        method="post"
+      >
+        <input name="email" placeholder="Email" />
+        <input name="password" placeholder="Password" />
+        <input name="newPassword" placeholder="New password" />
         <button>Login</button>
       </form>
     </div>
